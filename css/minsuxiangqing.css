@@ -1,0 +1,313 @@
+#headerbox{
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+	/*background: deepskyblue;*/
+	position: relative;
+}
+#zhenguo{
+	position: absolute;
+	top: 18px;
+}
+#logo{
+	width: 126px;
+	height: 46px;
+	position: absolute;
+	top: 15px;
+	left: 310px;
+}
+#daohangtiao{
+	position: absolute;
+	right: 0;
+}
+.daohangbox{
+	float: left;
+	width: 98px;
+	height: 70px;
+	position: relative;
+}
+#daohangbox{
+	float: left;
+	width: 98px;
+	height: 70px;
+	position: relative;
+}
+.daohang{
+	color: black;
+	text-align: center;
+	line-height: 74px;
+	font-size: 16px;
+}
+.daohang:hover{
+	background: whitesmoke;
+	border-bottom: 3px solid orange;
+}
+#vxpic1{
+	width: 150px;
+	height: 150px;
+	background: white;
+	position: absolute;
+	top: 77px;
+	left: -27px;
+	z-index: 1;
+	border: 1px solid lightgray;
+	display: none;
+}
+#daohangbox:hover #vxpic1{
+	display: block;
+}
+#vxzhenguo{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	width: 110px;
+	height: 110px;
+}
+#shoujiapp{
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+	top: 95px;
+	left: 40px;
+}
+#header{
+	width: 100%;
+	height: 600px;
+}
+#xiangqingbox{
+	width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+	/*background: whitesmoke;*/
+	position: relative;
+}
+#fangdajing{
+	width: 500px;
+	height: 314px;
+	background: pink;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 500px;
+	z-index: 1;
+	display: none;
+}
+#bighousepic:hover #fangdajing{
+	display: block;
+}
+#bighousepic:hover #square{
+	display: block;
+}
+#fangda{
+	width: 1500px;
+	height: 942px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#square{
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: deepskyblue;
+	display: none;
+}
+#house{
+	width: 500px;
+	height: 424px;
+	/*background: deepskyblue;*/
+	position: absolute;
+	top: 80px;
+	left: 20px;
+}
+#bighousepic{
+	width: 500px;
+	height: 314px;
+	position: relative;
+}
+#smallhousepic{
+	width: 500px;
+	height: 110px;
+}
+#bpic{
+	width: 500px;
+	height: 314px;
+}
+#spic1{
+	margin-top: 8px;
+	margin-right: 7px;
+	width: 160px;
+	height: 102px;
+}
+#spic2{
+	margin-top: 8px;
+	margin-right: 7px;
+	width: 160px;
+	height: 102px;
+}
+#spic3{
+	margin-top: 8px;
+	float: right;
+	width: 160px;
+	height: 102px;
+}
+#jinlin{
+	font-size: 20px;
+	font-weight: 900;
+	position: absolute;
+	top: 80px;
+	left: 550px;
+}
+#jixu{
+	font-size: 18px;
+	font-weight: 500;
+	position: absolute;
+	top: 130px;
+	left: 550px;
+	color: darkblue;
+}
+#jixu:hover{
+	color: darkblue; 	
+}
+#vxbox{
+	width: 670px;
+	height: 285px;
+	/*background: pink;*/
+	position: absolute;
+	top: 220px;
+	right: 0;
+}
+#vxdingfang{
+	width: 245px;
+	height: 245px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#yuding{
+	font-size: 32px;
+	color: black;
+	position: absolute;
+	top: 35px;
+	left: 290px;
+}
+#lixiang{
+	position: absolute;
+	top: 100px;
+	left: 290px;
+	font-size: 24px;
+	color: orange;
+}
+#jiage{
+	position: absolute;
+	top: 200px;
+	left: 290px;
+	font-size: 30px;
+	color: red;
+}
+#header1{
+	width: 100%;
+	height: 287px;
+	background: whitesmoke;
+}
+#footerbox{
+	width: 1200px;
+	height: 287px;
+	/*background: springgreen;*/
+	margin: 0 auto;
+	position: relative;
+}
+#women{
+	font-weight: 600;
+	font-size: 16px;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+}
+#footerbox a{
+	text-decoration: none;
+}
+#footerbox li:hover{
+	color: rgb(19,209,190);
+	text-decoration: none;
+}
+#bangzhu{
+	font-weight: 600;
+	font-size: 16px;
+	position: absolute;
+	top: 50px;
+	left: 300px;
+}
+#kefu{
+	font-weight: 600;
+	font-size: 16px;	
+	position: absolute;
+	top: 50px;
+	left: 580px;
+}
+#womenl{
+	color: #999;
+	font-size: 13px;
+	position: absolute;
+	top: 80px;
+	left: 20px;
+	line-height: 30px;
+}
+#bangzhul{
+	color: #999;
+	font-size: 13px;
+	position: absolute;
+	top: 80px;
+	left: 300px;
+	line-height: 30px;
+}
+#keful{
+	font-size: 600;
+	font-size: 14px;
+	position: absolute;
+	top: 80px;
+	left: 580px;
+	line-height: 30px;
+}
+#footervx{
+	width: 170px;
+	height: 170px;
+	margin-top: 20px;
+	margin-right: 40px;
+	float: right;
+}
+#footerAPP{
+	font-size: 14px;
+	position: absolute;
+	top: 200px;
+	left: 1020px;
+}
+#footerline{
+	position: absolute;
+	top: 232px;
+}
+#police{
+	position: absolute;
+	top: 250px;
+	float: left;
+	margin-left: 20px;
+}
+#gongan{
+	position: absolute;
+	top: 252px;
+	margin-left: 45px;
+	color: #999;
+}
+#gongan:hover{
+	float: left;
+	color: #999;
+	text-decoration: none;
+}
+#gif{
+	position: fixed;
+	right: 20px;
+	top: 40%
+}

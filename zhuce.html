@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="img/shouyePicture/MT.ico" rel="icon" type="image/x-icon" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<div id="header1">
+				<a href="index.html"><img src="img/zhuce/1.png" id="zhucepic"/></a>
+				<span id="yiyouzhanghao">已有美团账号?</span>
+				<a href="denglu.html"><div id="denglu">登录</div></a>
+			</div>
+		</div>
+		<HR align=center width=99% color=lightseagreen SIZE=2>
+		
+		<div id="biaodan">
+			<div id="shurukuang">
+				<div id="box1">手机号<input type="text" maxlength="11" style="width: 260px; height: 35px; text-indent: 6px" placeholder="请输入您的手机号" id="input1" class="input"/><span style="color: #999;" id="tongyong">注册成功后,全美团通用</span></div>
+				<p id="right1"><img src="img/zhuce/3.png"/></p>
+				<p id="p1"><img src="img/zhuce/2.png" />请输入正确的手机号码</p>
+				
+				<button id="yanzhengma">免费获取短信验证码</button>
+				<div id="box2">短信动态码<input type="text" maxlength="6" style="width: 260px; height: 35px; text-indent: 6px" placeholder="请输入六位数字动态码" id="input2" class="input"/></div>
+				<p id="right2"><img src="img/zhuce/3.png"/></p>
+				<p id="p2"><img src="img/zhuce/2.png" />请输入六位数字动态码</p>
+				
+				<div id="box3">创建密码<input type="password" maxlength="12" style="width: 260px; height: 35px; text-indent: 6px" placeholder="请创建六位以上十二位以下的密码" id="input3" class="input"/></div>
+				<p id="right3"><img src="img/zhuce/3.png"/></p>
+				<p id="p3"><img src="img/zhuce/2.png" />请输入有效长度的密码</p>
+				
+				<div id="box4">确认密码<input type="password" maxlength="12" style="width: 260px; height: 35px; text-indent: 6px" placeholder="请确认密码" id="input4" class="input"/></div>
+				<p id="right4"><img src="img/zhuce/3.png"/></p>
+				<p id="p4"><img src="img/zhuce/2.png" />两次输入的密码不一致,请重新输入</p>
+				
+				<button id="xieyi">同意以下协议并注册</button>
+				<a href=""><div class="xieyi">《美团网用户协议》</div></a>
+			</div> 
+		</div>
+		<HR align=center width=99% color=lightgray SIZE=1>
+		<div id="footerbox">
+		<ul id="footer">
+			<a href=""><li class="footer">©meituan.com</li></a>
+			<a href=""><li class="footer">京ICP证070791号</li> </a>
+			<a href=""><li class="footer">京公网安备11010502025545号</li></a>
+		</ul>
+		</div>
+		
+		<script>
+			
+			var reg01 = new RegExp();
+			var reg02 = /^\d{11}/;
+			
+			var str = document.getElementById('input1');
+			var oP1 = document.getElementById('right1');
+			var oP2 = document.getElementById('p1');
+			var oP3 = document.getElementById('tongyong');
+			str.onblur = function(){
+				var x = reg02.test(str.value);
+				console.log(x);
+				if(x==true){
+					oP1.style.display = "block";
+					oP2.style.display = "none";
+					oP3.style.display = "none";
+				}else{
+					oP1.style.display = "none";
+					oP2.style.display = "block";
+					oP3.style.display = "none";
+				}
+			}
+			
+			var reg03 = new RegExp();
+			var reg04 = /^\d{6}/;
+			
+			var str1 = document.getElementById('input2');
+			var oP4 = document.getElementById('right2');
+			var oP5 = document.getElementById('p2');
+			str1.onblur = function(){
+				var y = reg04.test(str1.value);
+				console.log(y);
+				if(y==true){
+					oP4.style.display = "block";
+					oP5.style.display = "none";
+				}else{
+					oP4.style.display = "none";
+					oP5.style.display = "block";
+				}
+			}
+			
+			var reg05 = new RegExp();
+			var reg06 = /^\w{6,12}$/;
+			
+			var str2 = document.getElementById('input3');
+			var oP6 = document.getElementById('right3');
+			var oP7 = document.getElementById('p3');
+			str2.onblur = function(){
+				var z = reg06.test(str2.value);
+				console.log(z);
+				if(z==true){
+					oP6.style.display = "block";
+					oP7.style.display = "none";
+				}else{
+					oP6.style.display = "none";
+					oP7.style.display = "block";
+				}
+			}
+			
+			var reg07 = new RegExp();
+			var reg08 = /^\w{6,12}$/;
+			
+			var str3 = document.getElementById('input4');
+			var oP8 = document.getElementById('right4');
+			var oP9 = document.getElementById('p4');
+			str3.onblur = function(){
+				var k = reg04.test(str3.value);
+				console.log(k);
+				if(k==true){
+					oP8.style.display = "block";
+					oP9.style.display = "none";
+				}else{
+					oP8.style.display = "none";
+					oP9.style.display = "block";
+				}
+			}
+		</script>
+	</body>
+</html>

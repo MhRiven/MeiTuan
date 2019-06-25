@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="img/shouyePicture/MT.ico" rel="icon" type="image/x-icon" />
+		<title>民宿详情</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/minsuxiangqing.css"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+	</head>
+	<body>
+			<div id="headerbox">
+				<a href="index.html"><img src="img/minsuxiangqing/1.png" id="zhenguo"/></a>
+				<a href="index.html"><img src="img/shangpinliebiao/logo.png" id="logo"/></a>
+				<ul id="daohangtiao">
+					<a href="denglu.html"><div class="daohangbox"><li class="daohang">登录/注册</li></div></a>
+					<a href=""><div id="daohangbox"><li class="daohang">手机版
+					<div id="vxpic1">
+						<img src="img/minsuxiangqing/5.png" id="vxzhenguo"/>
+						<p id="shoujiapp">下载手机APP</p>
+					</div>
+					</li></div></a>
+					<a href=""><div class="daohangbox"><li class="daohang">成为房东</li></div></a>
+				</ul>
+			</div>
+		<HR align=center width=99% color=lightgray SIZE=1>
+		
+		<header id="header">
+			<div id="xiangqingbox">
+				<div id="house">
+					<div id="bighousepic">
+						<img src="img/minsuxiangqing/3.jpg" id="bpic"/>
+						<div id="fangdajing"><img src="img/minsuxiangqing/3.jpg" id="fangda"/></div>
+						<div id="square"></div>
+					</div>
+					<div id="smallhousepic">
+						<img src="img/minsuxiangqing/4.jpg" id="spic1"/>
+						<img src="img/minsuxiangqing/8.jpg" id="spic2"/>
+						<img src="img/minsuxiangqing/9.jpg" id="spic3"/>
+					</div>
+				</div>
+				
+				<p id="jinlin">紧邻海洋馆/图书馆/于家堡舒适休闲一居风</p>
+				<a href=""><p id="jixu">继续在PC原价订房 ></p></a>
+				<div id="vxbox">
+					<img src="img/minsuxiangqing/12.png" id="vxdingfang"/>
+					<div id="yuding">二维码预定榛果民宿</div>
+					<p id="lixiang">立享30元优惠</p>
+					<p id="jiage">¥207.00</p>
+				</div>
+			</div>
+		</header>
+		
+		<header id="header1">
+			<div id="footerbox">
+				<p id="women">关于我们</p>
+				<ul id="womenl">
+					<a href=""><li>关于榛果</li></a>
+					<a href=""><li>工作机会</li></a>
+				</ul>
+				
+				<p id="bangzhu">网站帮助</p>
+				<ul id="bangzhul">
+					<a href=""><li>榛果协议</li></a>
+					<a href=""><li>隐私政策</li></a>
+					<a href=""><li>网站地图</li></a>
+
+
+				</ul>
+				
+				<p id="kefu">人工客服</p>
+				<ul id="keful">
+					<li>400-0660-190</li>
+					<li>登录问题: 10107888</li>
+				</ul>
+				<img src="img/minsuxiangqing/5.png" id="footervx"/>
+				<p id="footerAPP">下载榛果民宿APP</p>
+				
+				<HR align=center width=99% color=lightgray SIZE=1 id="footerline">
+				<img src="img/minsuxiangqing/6.png"  id="police"/>
+				<a href=""><p id="gongan">闽公网安备 35020302032622号  闽ICP备17013011号-1  营业资质</p></a>
+				<a href=""><img src="img/minsuxiangqing/7.gif" id="gif"/></a>
+			</div>
+		</header>
+		
+		<script>
+			
+			$('#bighousepic').mousemove(function(ev){
+				var nowleft = Math.floor(ev.clientX - $('#bighousepic').offset().left)-50;
+				var nowtop = ev.clientY - $('#bighousepic').offset().top-50;
+				
+				if(nowleft<0){
+					nowleft = 0;
+				}
+				if(nowleft>400){
+					nowleft = 400;
+				}
+				if(nowtop<0){
+					nowtop = 0;
+				}
+				if(nowtop>214){
+					nowtop = 214;
+				}
+//				
+				$('#square').css({
+					'top':nowtop,
+					'left':nowleft
+				})
+				$('#fangda').css({
+					'top':-nowtop*2.93,
+					'left':-nowleft*2.5
+				})
+			
+		})
+		</script>
+	</body>
+</html>
